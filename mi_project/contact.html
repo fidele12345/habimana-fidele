@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Online Market</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.contact-content {
+    width: 85%;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2, .company-details h3, .contact-form-section h3, .customer-support h3, .faq-section h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.company-details ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.company-details ul li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.map {
+    margin-top: 20px;
+}
+
+.map img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+}
+
+
+.contact-form-section {
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form .btn {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.contact-form .btn:hover {
+    background: #e55b00;
+}
+
+
+.customer-support ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.customer-support ul li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+
+.faq-section {
+    margin-top: 40px;
+}
+
+.faq {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.faq h4 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.faq p {
+    color: #555;
+}
+
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+.f{
+    list-style: none;
+    display: inline-block;
+    margin-left: 6%;
+    text-emphasis: none;
+    text-transform:lowercase;
+    text-decoration: solid;
+    cursor: pointer;
+}
+.f:hover{
+    list-style: none;
+    text-emphasis: none;
+    text-transform: lowercase;
+    text-decoration: solid;
+    cursor: pointer;
+    color: #fff;
+    background-color: black;
+    border-radius: 5%;
+}
+.i{
+    list-style: none;
+    display: inline-block;
+    margin-left: 6%;
+    text-emphasis: none;
+    text-transform: lowercase;
+    text-decoration: solid;
+    cursor: pointer;  
+}
+.i:hover{
+    
+        list-style: none;
+        text-emphasis: none;
+        text-transform: lowercase;
+        text-decoration: solid;
+        cursor: pointer;
+        color: #fff;
+        background-color: black;
+        border-radius: 5%;
+    }
+
+.y{
+    list-style: none;
+    display: inline-block;
+    margin-left: 6%;
+    text-emphasis: none;
+    text-transform: lowercase;
+    text-decoration: solid;
+    cursor: pointer;
+}
+.y:hover{
+    list-style: none;
+    text-emphasis: none;
+    text-transform: lowercase;
+    text-decoration: solid;
+    cursor: pointer;
+    color: #fff;
+    background-color: black;
+    border-radius: 5%;
+}
+.tu{
+    list-style: none;
+    display: inline-block;
+    margin-left: 6%;
+    text-emphasis: none;
+    text-transform: lowercase;
+    text-decoration: solid;
+    cursor: pointer;
+}
+.tu:hover{
+    list-style: none;
+        text-emphasis: none;
+        text-transform: lowercase;
+        text-decoration: solid;
+        cursor: pointer;
+        color: #fff;
+        background-color: black;
+        border-radius: 5%;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+    list-style: none;
+        text-emphasis: none;
+        text-transform: lowercase;
+        text-decoration: solid;
+        cursor: pointer;
+        color: #fff;
+        background-color: black;
+        border-radius: 5%;
+}
+button{
+    width: 160px;
+    height: 30px;
+    padding: 0;
+    float: right;
+    background-color: #333;
+    color: #f4f4f4;
+    border-radius: 4%;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: aqua;
+    color: #e01313;
+    text-decoration: underline;
+
+}
+
+    </style>
+</head>
+
+<body>
+
+   
+    <header>
+        <div class="logo">
+            <h1>FXDL Market</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <div class="contact-content">
+        <section class="contact-info">
+            <h2 style="color: #000000;font-size: large;font-family: courier new;text-decoration: underline;">Contact Us With More Imfo</h2>
+            <p> You can reach us by phone, email, or through the contact form below. We aim to respond within 24 hours.</p>
+        </section>
+
+       
+        <section class="company-details">
+            <h3 style="color: #e01313;font-weight: 500;font-family: sans-serif; font-size: large;">Company Information</h3>
+            <ul>
+                <li><strong>Phone:</strong> 0787478204</li>
+                <li><strong>Email:</strong>fidelehabimana23@gmail.com</li>
+                <li><strong>Office Address:</strong> Musanze Rwanda</li>
+                <li><strong>Customer Service Hours:</strong> Mon-Fri: 8 AM – 6 PM, sun: 10 AM – 4 PM</li>
+            </ul>
+            <div class="map">
+                <h4>Our Location</h4>
+                
+				
+		   </div>
+        </section>
+
+        
+        <section class="contact-form-section">
+            <h3>Send Us a Message</h3>
+            <form action="#" method="POST" class="contact-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+
+     
+        <section class="customer-support">
+            <h3>Need Immediate Help?</h3>
+            <p>If you need urgent assistance, feel free to reach out to our customer support team directly. We’re always here to help.</p>
+            <ul>
+                <li><strong>Phone Support:</strong> Call us :0787478204</li>
+                <li><strong>Email Support:</strong> Email us:fidelehabimana@gmail.co</li>
+                <li><strong>Live Chat:</strong> Available on our website from 8 AM – 6 PM Monn to Fri</li>
+            </ul>
+        </section>
+
+       
+        <section class="faq-section">
+            <h3>Frequently Asked Questions (FAQ)</h3>
+            <div class="faq">
+                <h4>How can I track my order?</h4>
+                <p>You can track your order by logging into your account and visiting the "My Orders" section. Once your order has been shipped, you will receive a tracking number via email.</p>
+            </div>
+
+            <div class="faq">
+                <h4>What payment methods do you accept?</h4>
+                <p>We accept all major credit cards, PayPal, and Apple Pay and Mobile App.</p>
+            </div>
+
+            <div class="faq">
+                <h4>How can I return or exchange a product?</h4>
+                <p>If you are not satisfied with your purchase, you can return or exchange the product within 30 days. </p>
+            </div>
+
+            <div class="faq">
+                <h4>Do you offer international shipping?</h4>
+                <p>Yes, we offer international shipping to select countries. Shipping fees may vary depending on your location. </p>
+            </div>
+        </section>
+    </div>
+
+   
+    <footer>
+        <p>&copy; 2024 FXDL Market. All rights reserved.</p>
+        <ol>
+            <li class="f">facebook</li>
+            <li class="i">instagram</li>
+            <li class="y">youtube</li>
+            <li class="tu">twitter</li>
+            <li class="t">tiktok</li>
+        </ol>
+    </footer>
+    <a href="C:\Users\HP\3D Objects\mi_project\index.html"><button>BACK</button></a>
+
+</body>
+
+</html>

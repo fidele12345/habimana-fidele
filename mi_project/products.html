@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Market - Product Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+    list-style: none;
+        text-emphasis: none;
+        text-transform: lowercase;
+        text-decoration: solid;
+        cursor: pointer;
+        color: #fff;
+        background-color: black;
+        border-radius: 5%;
+}
+
+.product-content {
+    width: 85%;
+    margin: 20px auto;
+}
+
+.product-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 40px;
+}
+
+.product-gallery {
+    flex: 1;
+    max-width: 45%;
+}
+
+.product-gallery img.main-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.thumbnail-gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.thumbnail-gallery img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+.product-info {
+    flex: 1;
+    max-width: 45%;
+}
+
+.product-info h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 24px;
+    color: #ff6600;
+    margin-bottom: 15px;
+}
+
+.product-info p {
+    margin-bottom: 20px;
+}
+
+.product-features ul {
+    list-style: lower-alpha;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.product-quantity {
+    margin-bottom: 20px;
+}
+
+.product-quantity label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.product-quantity input {
+    width: 50px;
+    padding: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff6600;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.customer-reviews {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 40px;
+}
+
+.customer-reviews h3 {
+    margin-bottom: 15px;
+}
+
+.review {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.review:last-child {
+    border-bottom: none;
+}
+
+.review h4 {
+    margin-bottom: 5px;
+}
+
+.rating {
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.related-products {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.related-products h3 {
+    margin-bottom: 15px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background: #fff;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.product-card h4 {
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 18px;
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+.product-card .btn {
+    background: #333;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+.f{
+    list-style: none;
+    display: inline-block;
+    margin-left: 6%;
+    text-emphasis: none;
+    text-transform:lowercase;
+    text-decoration: solid;
+    cursor: pointer;
+}
+.f:hover{
+    list-style: none;
+    text-emphasis: none;
+    text-transform: lowercase;
+    text-decoration: solid;
+    cursor: pointer;
+    color: #fff;
+    background-color: black;
+    border-radius: 5%;
+}
+.i{
+    list-style: none;
+    display: inline-block;
+    margin-left: 6%;
+    text-emphasis: none;
+    text-transform: lowercase;
+    text-decoration: solid;
+    cursor: pointer;  
+}
+.i:hover{
+    
+        list-style: none;
+        text-emphasis: none;
+        text-transform: lowercase;
+        text-decoration: solid;
+        cursor: pointer;
+        color: #fff;
+        background-color: black;
+        border-radius: 5%;
+    }
+
+.y{
+    list-style: none;
+    display: inline-block;
+    margin-left: 6%;
+    text-emphasis: none;
+    text-transform: lowercase;
+    text-decoration: solid;
+    cursor: pointer;
+}
+.y:hover{
+    list-style: none;
+    text-emphasis: none;
+    text-transform: lowercase;
+    text-decoration: solid;
+    cursor: pointer;
+    color: #fff;
+    background-color: black;
+    border-radius: 5%;
+}
+.tu{
+    list-style: none;
+    display: inline-block;
+    margin-left: 6%;
+    text-emphasis: none;
+    text-transform: lowercase;
+    text-decoration: solid;
+    cursor: pointer;
+}
+.tu:hover{
+    list-style: none;
+        text-emphasis: none;
+        text-transform: lowercase;
+        text-decoration: solid;
+        cursor: pointer;
+        color: #fff;
+        background-color: black;
+        border-radius: 5%;
+}
+button{
+    width: 160px;
+    height: 30px;
+    padding: 0;
+    float: right;
+    background-color: #333;
+    color: #f4f4f4;
+    border-radius: 4%;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: aqua;
+    color: #e01313;
+    text-decoration: underline;
+
+}
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>FXDL Market</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="product-content">
+        <div class="product-details">
+            <div class="product-gallery">
+                <img src="img/product-main.png" alt="Main Product Image" class="main-image">
+            </div>
+
+            <div class="product-info" style="background-color: #333;color:#f4f4f4;">
+                <h2 style="font-family: monospace;color: #ffcc00;text-decoration: solid;">iphone 15 Pro Max</h2>
+                <p class="price">$1.5</p>
+               
+                <div class="product-features">
+                    <h3>Key Features</h3>
+                    <ul>
+                        
+                        <li>5G Connectivity</li>
+                        <li>Triple 12MP Camera System</li>
+                        <li>128GB Storage Capacity</li>
+                        <li>Face ID and Wireless Charging</li>
+                    </ul>
+                </div>
+
+                <div class="product-quantity" style="background-color: darkslategrey;">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="3" value="1">
+                </div>
+
+                <a href="C:\Users\HP\Desktop\web development\project\pay.html" class="btn">Buy Now</a>
+            </div>
+        </div>
+
+        <section class="related-products">
+            <h3 style="text-align: center;font-family: lucida handwriting;">OUR PRODUCTS</h3>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="img/related1.png" alt="Related Product 1">
+                    <h4>4K Ultra HD TV</h4>
+                    <p>$499.99</p>
+                    <a href="#" class="btn">Buy Product</a>
+                </div>
+                <div class="product-card">
+                    <img src="img/related2.png" alt="Related Product 2">
+                    <h4>Wireless Headphones</h4>
+                    <p>$199.99</p>
+                    <a href="#" class="btn">Buy Product</a>
+                </div>
+                <div class="product-card">
+                    <img src="img/related3.png" alt="Related Product 3">
+                    <h4>Smartwatch Series 7</   h4>
+                    <p>$299.99</p>
+                    <a href="#" class="btn">Buy Product</a>
+                </div>
+                <div class="product-card">
+                    <img src="C:\Users\HP\3D Objects\mi_project\img\toyota1.png" alt="Related Product 3">
+                    <h4>toyota 7</   h4>
+                    <p>$3M.99</p>
+                    <a href="#" class="btn">Buy Product</a>
+                </div>
+                <div class="product-card">
+                    <img src="C:\Users\HP\3D Objects\mi_project\img\hybride.png "alt="Related Product 3">
+                    <h4>Bnz</   h4>
+                    <p>$2955.9</p>
+                    <a href="#" class="btn">Buy Product</a>
+                </div>
+                <div class="product-card">
+                    <img src="C:\Users\HP\3D Objects\mi_project\img\phone16.png" alt="Related Product 3">
+                    <h4>iphone 16 pro</   h4>
+                    <p>$1M</p>
+                    <a href="#" class="btn">Buy Product</a>
+                </div>
+                <div class="product-card">
+                    <img src="C:\Users\HP\3D Objects\mi_project\img\hybride.png" alt="Related Product 3">
+                    <h4>bmw25</   h4>
+                    <p>$993.99</p>
+                    <a href="#" class="btn">Buy Product</a>
+                </div>
+                <div class="product-card">
+                    <img src="C:\Users\HP\3D Objects\mi_project\img\v8.png" alt="Related Product 3">
+                    <h4>v8 kbl</   h4>
+                    <p>$3.3M</p>
+                    <a href="#" class="btn">Buy Product</a>
+                </div>
+                <div class="product-card">
+                    <img src="C:\Users\HP\3D Objects\mi_project\img\v81.png" alt="Related Product 3">
+                    <h4>toyota px</   h4>
+                    <p>$224.99</p>
+                    <a href="#" class="btn">Buy Product</a>
+                </div>
+                <div class="product-card">
+                    <img src="C:\Users\HP\3D Objects\mi_project\house2.jpg" alt="Related Product 3">
+                    <h4>FXDL House</   h4>
+                    <p>$599.99</p>
+                    <a href="#" class="btn">Buy Product</a>
+                </div>
+                <div class="product-card">
+                    <img src="C:\Users\HP\3D Objects\mi_project\house1.jpg" alt="Related Product 3">
+                    <h4>FXDL palazza</   h4>
+                    <p>$890.99</p>
+                    <a href="#" class="btn">Buy Product</a>
+                </div>
+                <div class="product-card">
+                    <img src="C:\Users\HP\3D Objects\mi_project\house.jpg" alt="Related Product 3">
+                    <h4>NMG house</   h4>
+                    <p>$899.99</p>
+                    <a href="#" class="btn">Buy Product</a>
+                </div>
+                <div class="product-card">
+                    <img src="C:\Users\HP\3D Objects\mi_project\img\toyota.png" alt="Related Product 3">
+                    <h4>TOYOTA 7</   h4>
+                    <p>$2M</p>
+                    <a href="#" class="btn">Buy Product</a>
+                </div>
+                <div class="product-card">
+                    <img src="C:\Users\HP\3D Objects\mi_project\img\toyota1.png" alt="Related Product 3">
+                    <h4>TOYOTA p4</   h4>
+                    <p>$290</p>
+                    <a href="#" class="btn">Buy Product</a>
+                </div>
+                <div class="product-card">
+                    <img src="C:\Users\HP\3D Objects\mi_project\img\toyota2.png" alt="Related Product 3">
+                    <h4>vm </   h4>
+                    <p>$99.99</p>
+                    <a href="#" class="btn">Buy Product</a>
+                </div>
+                <div class="product-card">
+                    <img src="C:\Users\HP\3D Objects\mi_project\img\bmw.png" alt="Related Product 3">
+                    <h4>bmw 7</   h4>
+                    <p>$29M</p>
+                    <a href="#" class="btn">Buy Product</a>
+
+                </div>
+                <div class="product-card">
+                    <img src="C:\Users\HP\Desktop\web tutorial\hotels\download (1).jpg">
+                    <h4>th hotel </   h4>
+                    <p>$209M</p>
+                    <a href="#" class="btn">Buy Product</a>
+                    
+                </div>
+                <div class="product-card">
+                    <img src="C:\Users\HP\Desktop\web tutorial\hotels\download (4).jpg">
+                    <h4>FXDL apartment</   h4>
+                    <p>$599M</p>
+                    <a href="#" class="btn">Buy Product</a>
+                    
+                </div>
+                <div class="product-card">
+                    <img src="C:\Users\HP\Desktop\web tutorial\hotels\download (6).jpg">
+                    <h4>FXDL hotel</   h4>
+                    <p>$289M</p>
+                    <a href="#" class="btn">Buy Product</a>
+                    
+                </div>
+                <div class="product-card">
+                    <img src="C:\Users\HP\Desktop\web tutorial\hotels\images (14).jpg">
+                    <h4>bn1 hotel</   h4>
+                    <p>$290M</p>
+                    <a href="#" class="btn">Buy Product</a>
+                    
+                </div>
+                <div class="product-card">
+                    <img src="C:\Users\HP\Desktop\web tutorial\hotels\images (11).jpg">
+                    <h4>lucidius house  7</   h4>
+                    <p>$609M</p>
+                    <a href="#" class="btn">Buy Product</a>
+                    
+                </div>
+                <div class="product-card">
+                    <img src="C:\Users\HP\Desktop\web tutorial\shoes\cars\download (2).jpg">
+                    <h4>vox   7</   h4>
+                    <p>$69M</p>
+                    <a href="#" class="btn">Buy Product</a>
+            </div>
+            <div class="product-card">
+                <img src="C:\Users\HP\Desktop\web tutorial\shoes\cars\download (4).jpg">
+                <h4>bond  7</   h4>
+                <p>$9M</p>
+                <a href="#" class="btn">Buy Product</a>
+            </div>
+            <div class="product-card">
+                <img src="C:\Users\HP\Desktop\web tutorial\shoes\cars\download (5).jpg">
+                <h4>Lava</   h4>
+                <p>$6M</p>
+                <a href="#" class="btn">Buy Product</a>
+            </div>
+            </div>
+        </section>
+    </div>
+            <section class="customer-reviews">
+                <h3>Customer Reviews</h3>
+                <div class="review">
+                    <h4>fiacre</h4>
+                    <p class="rating">&starf;&starf;&starf;&starf;&starf;&starf;&starf;&starf;</p>
+                    <p>product is fantastic ! phone The camera is incredible, and the battery life is much better than my old phone.</p>
+                </div>
+                <div class="review">
+                    <h4>danny</h4>
+                    <p class="rating">&starf;&starf;&starf;&starf;&starf;&starf;&starf;</p>
+                    <p>I absolutely love this product. It's fast, smooth, and the display is so sharp and bright.</p>
+               <a href="C:\Users\HP\3D Objects\mi_project\index.html"><button>BACK</button></a>
+                </div>
+            </section>
+
+    
+    <footer>
+        <p>&copy; 2024 FXDLMarket. All rights reserved.</p>
+        <ol>
+            <li class="f">facebook</li>
+            <li class="i">instagram</li>
+            <li class="y">youtube</li>
+            <li class="tu">twitter</li>
+            <li class="t">tiktok</li>
+        </ol>
+    </footer>
+
+</body>
+
+</html>
